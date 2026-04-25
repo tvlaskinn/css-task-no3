@@ -1,99 +1,73 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iintoo Form</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css task no.3 </title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="font" href=" https://www.fontsquirrel.com/fonts/barlow ">
+
+
 </head>
+
 <body>
-  <main class="page">
-    <section class="card" aria-label="Registration form">
-      <aside class="card__visual" aria-hidden="true">
-        <img class="card__logo" src="logo.svg" alt="" />
-      </aside>
 
-      <section class="card__content">
-        <h1>Get iintoo it today</h1>
-        <p class="subtitle">There is no charge or obligation upon registration.</p>
+  <div class="container">
 
-        <div class="socials" aria-label="Social registration">
-          <a href="#" class="social social--fb" aria-label="Register with Facebook">
-            <img src="facebook.svg" alt="" aria-hidden="true" />
-            <span>Register with Facebook</span>
-          </a>
-          <a href="#" class="social social--in" aria-label="Register with Linkedin">
-            <img src="linkedin.svg" alt="" aria-hidden="true" />
-            <span>Register with Linkedin</span>
-          </a>
-        </div>
+    <div class="left">
+      <img src="bg.jpg">
+      <img class="logo" src="logo.svg">
 
-        <div class="or"><span>OR</span></div>
+    </div>
 
-        <form class="form" action="#" method="post">
-          <div class="fields">
-            <label class="field">
-              <span>Email</span>
-              <input type="email" name="email" value="gus.goodwin@gmail.com" required />
-            </label>
 
-            <label class="field">
-              <span>Phone</span>
-              <input type="tel" name="phone" />
-            </label>
-          </div>
+    <div class="right">
+      <h2 class="tittle">Get iintoo it today</h2>
+       <p class="paragraph">
+        There is no charge or obligation upon registration</p>
 
-          <h2>What type of investor are you?</h2>
-          <p class="subtitle subtitle--small">Select the type of investor you are below.</p>
+       <div class="buttons-container">
 
-          <div class="radios">
-            <label class="radio" title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
-              <input type="radio" name="investor" checked />
-              <span class="dot"></span>
-              <span>Individual</span>
-              <span class="hint">i</span>
-            </label>
+          <button class="fb"> Register with Facebook </button>
 
-            <label class="radio" title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
-              <input type="radio" name="investor" />
-              <span class="dot"></span>
-              <span>Business</span>
-              <span class="hint">i</span>
-            </label>
+          <button class="in">Register with Linkedin</button>
+            
+             <div class="or">OR</div>
 
-            <label class="radio" title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
-              <input type="radio" name="investor" />
-              <span class="dot"></span>
-              <span>IRA</span>
-              <span class="hint">i</span>
-            </label>
+       </div>
+       
+           <div class="inputs">
+       
+           <input type="email" placeholder="Enter your e-mail">
+           <input type="phone number " placeholder="Enter your phone number">
+          </div> 
+           
+      <h2 class="tittle2">What type of investor are you ?</h2>   
+       <p class="paragraph2">Select the type of investor you are below.</p> 
+  
 
-            <label class="radio" title="I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common.">
-              <input type="radio" name="investor" />
-              <span class="dot"></span>
-              <span>Trust</span>
-              <span class="hint">i</span>
-            </label>
-          </div>
+    <form action="" method="get">
+       
+      <label class="radio">
+        
+          <input type="radio">Individual 
+          <input type="radio">Bussiness
+          <input type="radio"> IRA
+          <input type="radio"> Trust
 
-          <div class="tip">
-            I am a natural person investing on my own behalf as a sole owner, joint tenant,
-            or tenant in common.
-          </div>
+     </label>
+         
+   </form>
+        <button class="create">Create Account</button>
 
-          <label class="terms">
-            <input type="checkbox" name="terms" />
-            <span class="box"></span>
-            <span>I agree to the terms and receiving notifications from iintoo <a href="#">View full terms</a></span>
-          </label>
-
-          <button class="submit" type="submit">Create Account</button>
-        </form>
-      </section>
-    </section>
-  </main>
+      </div>
+            
+      
+    </div>
+  </div>
+ <div>
 </body>
+
 </html>
