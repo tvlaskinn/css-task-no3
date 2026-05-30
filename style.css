@@ -1,22 +1,24 @@
-﻿@font-face {
+﻿body {
+  font-family: 'Barlow', sans-serif;
+}
+ 
+@font-face {
   font-family: 'Barlow';
   src: url('barlow.woff2') format('woff2');
-  color: #2A4A5C;
 }
 
 
 .container {
   display: flex;
   background-color: #EFF6FF;
-  margin: 40px 0 auto;
+  margin: 0px 0 auto;
+  border: #EFF6FF;
 
 }
 
 .left {
-  display: flex;
-  float: left;
   height: 100%;
-  width: 55%;
+  width: 50%;
   background-color: #EFF6FF;
 }
 
@@ -29,27 +31,25 @@
 }
 
 .right {
-  float: right;
   height: 100%;
-  width: 48%;
+  width: 50%;
   background-color: #EFF6FF;
-  padding: 5rem 4rem;
+  padding: 6rem 5rem;
 }
 
-.tittle {
-  font-size: 120%;
-  top: 100%; 
-  right: -10%;
+.title {
+  font-size: 200%;
+  font-family: 'Barlow', sans-serif;
   color: #7B8A92;
 }
 
 .paragraph {
   font-family: 'Barlow', sans-serif;
   color: #96A5B1; 
-  right: 360px;
 }
  
-.tittle2 {
+.title2 {
+  font-family: 'Barlow', sans-serif;
   font-size: 150%;
   width: 60%;
   height: 60%;
@@ -67,54 +67,86 @@
 }
 
 .or {
-  padding: 0%;
-  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  height: 30px;
+  margin-left: 12%;
+  color: #7B8A92;
 }
-
 
 .buttons-container {
   display: flex ;
-  width: 60%;
-  height: 60px;
-  margin-top: 50px;
+  width: 100%;
+  height: 80px;
 }
 
 .fb {
+  display: flex;
+  align-items: center;
+  gap: 16px;
   background: #255A9B;
   color: #FFFFFF;
-  width: 20%;
-  height: 30px;
-  margin-right:10%;
+  border-radius: 8px;
+  border: 1px solid #EFF6FF;
+  height: 48px;
+}
+
+.facebook {
+  width: 20px;
+}
+
+.linkedin {
+  width: 20px;
 }
 
 .in {
-  background: #0076B6;
-  width: 20%;
-  height: 30px;
-  font-family: 'Barlow', sans-serif ;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #3698fb;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #EFF6FF;
   color: #FFFFFF;
-  margin-right:10%
-  
+  padding-bottom: 0%;
 }
+
 
 .inputs {
   display: flex;
-  gap: 50px;
-  font-family: 'Barlow'sans-serif;
+  gap: 16px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
   color: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  height: 48px;
+  border: 1px solid #EFF6FF;
 }
 
 
+.radio {
+  display: flex;
+  gap: 20px;
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #EFF6FF;
+}
+
+
+.subtitle {
+  font-family: 'Barlow', sans-serif;
+  color: #96A5B1;
+  margin-top: 5%;
+}
 
 .create {
-  width: 20%;
-  height: 45px;
+  text-align: center;
+  width: 25%;
+  height: 35px;
   background: #3698fb;
   border: none;
   color: white;
-  border-radius: 20px;
-  margin-bottom: 20%;
-  margin-top: 10%;
-  margin-left: 3%
+  border-radius: 10px;
+  margin-top: 8%;
+  margin-left: 5%
 }
