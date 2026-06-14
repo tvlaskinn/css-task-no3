@@ -31,51 +31,65 @@
 
         <button type="button" class="fb">
           <img class="facebook" src="facebook.svg" alt="Facebook">
-           Register with Facebook 
+          Register with Facebook
         </button>
 
         <button type="button" class="in">
-          <img class="linkedin" src="linkedin.svg" alt="Linkedin"> 
-            Register with Linkedin
-        </button>  
-
+          <img class="linkedin" src="linkedin.svg" alt="Linkedin">
+          Register with Linkedin
+        </button>
       </div>
 
-       <div class="or">
-           OR 
-       </div>
+      <div class="line-with-text">
+       </span> OR </span>
+      </div>
 
+    
       <form action="" method="get">
+      
+       <div class="input-box">
+          <label>Email</label>
+          <input type="email" id="email" name="email" value="gus.goodwin@gmail.com">
 
-      <div class="inputs">
+          <label>Phone</label>
+          <input type="phone" id="phone" name="phone" value="Enter your phone number">
+       </div> 
 
-        <input type="email" placeholder="Enter your e-mail">
-        <input type="phone" placeholder="Enter your phone number">
-      </div>
-
-      <h2 class="title2">What type of investor are you ?</h2>
-      <p class="paragraph2">Select the type of investor you are below.</p>
+        <h2 class="title2">What type of investor are you ?</h2>
+        <p class="paragraph2">Select the type of investor you are below.</p>
 
 
+        
         <label class="radio">
 
-          <input type="radio" name="option Individual">Individual
-          <input type="radio" name="option Business" value="Business">Bussiness
-          <input type="radio" name="option IRA" > IRA
-          <input type="radio" name="option Trust"> Trust
+           <label for="individual">
+             <input type="radio" id="individual"  name="option" value="individual">Individual
+           </label>
 
+          <label for="business">
+            <input type="radio" id="business" name="option" value="business">Bussiness
+          </label>
+
+          <label for="ira">
+            <input type="radio" id="ira" name="option" value="ira"> IRA
+          </label>
+
+          <label for="trust">
+            <input type="radio" id="trust" name="option" value="trust"> Trust
+          </label>
+        </label>
+      
+        <label class="checkbox">
+          <input type="checkbox">
+            I agree to the terms and notifications from iintoo
+          <a href="#" class="link">View full terms</a>
         </label>
 
-       <input type="checkbox" class="subtitle"> 
-       <span>I agree to the terms and notifications from iintoo</span>
-        <a href="View full terms" target="_blank">
-          View full terms</a>
-
+        <button type="button" class="create">Create Account</button>
       </form>
-
-      <button type="button" class="create">Create Account</button>
-
-    </div>
+     </div>
+    
   </div>
 </body>
+
 </html>

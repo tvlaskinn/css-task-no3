@@ -49,12 +49,10 @@
 }
  
 .title2 {
-  font-family: 'Barlow', sans-serif;
   font-size: 150%;
   width: 60%;
   height: 60%;
-  margin-top:10%;
-  left: 4%;
+ 
   color:#7B8A92;
   line-height: 1.6;
 }
@@ -66,17 +64,33 @@
   right: -10%;
 }
 
-.or {
+.line-with-text {
   display: flex;
   align-items: center;
-  width: 20%;
-  height: 30px;
-  margin-left: 12%;
+  text-align: center;
+  width: 15%;
+  margin-left: 5%;
   color: #7B8A92;
+}
+
+.line-with-text::before,
+.line-with-text::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #7B8A92;
+}
+
+.line-with-text:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.line-with-text:not(:empty)::after {
+  margin-left: 0.75em;
 }
 
 .buttons-container {
   display: flex ;
+  gap: 16px;
   width: 100%;
   height: 80px;
 }
@@ -84,11 +98,13 @@
 .fb {
   display: flex;
   align-items: center;
-  gap: 16px;
+  text-align: center;
+  justify-content: space-between;
   background: #255A9B;
   color: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 0px;
   border: 1px solid #EFF6FF;
+  width: 15%;
   height: 48px;
 }
 
@@ -103,24 +119,31 @@
 .in {
   display: flex;
   align-items: center;
-  gap: 16px;
+  text-align: center;
+  justify-content: space-between;
   background: #3698fb;
+  width: 15%;
   height: 48px;
-  border-radius: 8px;
+  border-radius: 0px;
   border: 1px solid #EFF6FF;
   color: #FFFFFF;
-  padding-bottom: 0%;
 }
 
 
-.inputs {
+.input-box {
   display: flex;
-  gap: 16px;
   font-family: 'Barlow', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #FFFFFF;
   height: 48px;
   border: 1px solid #EFF6FF;
+}
+
+#id {
+  font-family: 'Barlow', sans-serif;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px; 
 }
 
 
@@ -128,25 +151,29 @@
   display: flex;
   gap: 20px;
   margin-top: 24px;
-  padding: 20px;
   border: 1px solid #EFF6FF;
 }
 
 
-.subtitle {
-  font-family: 'Barlow', sans-serif;
+.checkbox {
+  display: flex;
   color: #96A5B1;
-  margin-top: 5%;
+  margin-top: 20px;
 }
 
 .create {
-  text-align: center;
-  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
   height: 35px;
   background: #3698fb;
   border: none;
   color: white;
   border-radius: 10px;
-  margin-top: 8%;
-  margin-left: 5%
+  margin-top: 5%;
+  margin-left: 3%
+}
+.link{
+  color: #3698fb;
 }
