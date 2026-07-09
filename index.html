@@ -47,17 +47,19 @@
 
       <form action="" method="get">
 
-        <div class="input-box">
-          <div>
-            <label>Email</label>
-            <input type="email" id="email" name="email" value="gus.goodwin@gmail.com">
+        <div class="input-container">
+          <div class="input-box">
+            <div>
+              <label>Email</label>
+              <input type="email" id="email" name="email" value="gus.goodwin@gmail.com">
+            </div>
           </div>
-        </div>
 
-        <div class="input-box">
-          <div>
-            <label>Phone </label>
-            <input type="phone" id="phone" name="phone">
+          <div class="input-box">
+            <div>
+              <label>Phone </label>
+              <input type="phone" id="phone" name="phone">
+            </div>
           </div>
         </div>
 
@@ -70,7 +72,10 @@
 
           <label for="individual">
             <input type="radio" id="individual" name="option" value="individual">Individual
-            <span class="i"> ⓘ </span>
+            <span class="i" data-tooltip="
+            I am a natural person investing on my
+            own behalf as a sole owner,joint tenant,
+            or tenant in common."> ⓘ </span>
           </label>
 
           <label for="business">
